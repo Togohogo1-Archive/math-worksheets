@@ -1,28 +1,239 @@
-% This is a simple sample document.  For more complicated documents take a look in the exercise tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
+\documentclass{article}
 
-\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
 
-\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
+\title{Multiplication Problems}
+\author{Name: \_\_\_\_\_\_\_\_\_\_\_}
+\date{2022-07-17}
 
-\title{Simple Sample} % Sets article title
-\author{My Name} % Sets authors name
-\date{\today} % Sets date for date compiled
-% The preamble ends with the command \begin{document}
-\begin{document} % All begin commands must be paired with an end command somewhere
-    \maketitle % creates title using information in preamble (title, author, date)
+\begin{document}
+\maketitle
 
-    \section{Hello World!} % creates a section
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\linewidth]{images/07_17_2022.jpg}
+\end{figure}
 
-    \textbf{Hello World!} Today I am learning \LaTeX. %notice how the command will end at the first non-alphabet charecter such as the . after \LaTeX
-     \LaTeX{} is a great program for writing math. I can write in line math such as $a^2+b^2=c^2$ %$ tells LaTexX to compile as math
-     . I can also give equations their own space:
-    \begin{equation} % Creates an equation environment and is compiled as math
-    \gamma^2+\theta^2=\omega^2
-    \end{equation}
-    If I do not leave any blank lines \LaTeX{} will continue  this text without making it into a new paragraph.  Notice how there was no indentation in the text after equation (1).
-    Also notice how even though I hit enter after that sentence and here $\downarrow$
-     \LaTeX{} formats the sentence without any break.  Also   look  how      it   doesn't     matter          how    many  spaces     I put     between       my    words.
+\section{Set 1}
+Warmup problems
 
-    For a new paragraph I can leave a blank space in my code.
+\begin{flalign*}
+    20 \times 9 &= &\\
+    14 \times 5 &= &\\
+    10 \times 9 &= &\\
+    17 \times 0 &= &\\
+    13 \times 5 &= &\\
+    15 \times 9 &= &\\
+    11 \times 0 &= &\\
+    14 \times 3 &= &\\
+    14 \times 0 &= &\\
+    10 \times 3 &= &
+\end{flalign*}
 
-\end{document} % This is the end of the document
+\newpage
+
+\section{Set 2}
+One digit multiplied by three digit
+
+\begin{tabular}{ccccc}
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 1 & 3 & 5 \\
+                × &   &   & 4 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 1 & 8 & 8 \\
+                × &   &   & 4 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 8 & 0 & 7 \\
+                × &   &   & 6 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 6 & 9 & 5 \\
+                × &   &   & 7 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 2 & 2 & 9 \\
+                × &   &   & 4 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} \\
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 5 & 4 & 5 \\
+                × &   &   & 9 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 8 & 7 & 6 \\
+                × &   &   & 8 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 2 & 0 & 9 \\
+                × &   &   & 3 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 7 & 2 & 8 \\
+                × &   &   & 1 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.2\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+                & 6 & 3 & 1 \\
+                × &   &   & 5 \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+                \\
+                \hline
+            \end{tabular} \\
+        \end{table}
+    \end{minipage}
+\end{tabular}
+
+\section{Set 3}
+Set 2, but with harder problems
+
+\begin{tabular}{ccc}
+    \begin{minipage}{0.33\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c@{\,}c@{\,}c}
+                & 2 & 7 & 9 & 5 & 9 \\
+                × & & & & & 8 \\
+                \hline
+            \end{tabular}
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.33\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c@{\,}c}
+                & 7 & 0 & 8 & 7 \\
+                × & & & & 2 \\
+                \hline
+            \end{tabular}
+        \end{table}
+    \end{minipage} &
+
+    \begin{minipage}{0.33\linewidth}
+        \begin{table}[H]
+            \begin{tabular}{c@{\,}c@{\,}c@{\,}c@{\,}c@{\,}c@{\,}c@{\,}c}
+                & 1 & 1 & 3 & 6 & 3 & 3 \\
+                × & & & & & & 7 \\
+                \hline
+            \end{tabular}
+        \end{table}
+    \end{minipage}
+\end{tabular}
+
+\end{document}
