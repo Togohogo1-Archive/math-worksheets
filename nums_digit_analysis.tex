@@ -6,6 +6,10 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{enumitem}
+\usepackage{lipsum}
+\usepackage[table]{xcolor}
+
+\newcommand{\ineqbox}{\fbox{\begin{minipage}[c][3ex][b]{3ex}\;\end{minipage}}}
 
 \title{Numbers in Different Forms}
 \author{Name: \rule[-5pt]{5cm}{0.5pt}}
@@ -88,10 +92,14 @@
         \item Is less than 90000
     \end{enumerate}
 
+    \vspace{1em}
+
     \item Write a 6 digit number which
     \begin{enumerate}[topsep=0pt, label=\alph*.]
         \item Has 7 in its thousandth place \hspace{\stretch{1}} \rule[-5pt]{5cm}{0.5pt}
     \end{enumerate}
+
+    \vspace{1em}
 
     \item Write a 7 digit number which
     \begin{enumerate}[topsep=0pt, label=\alph*.]
@@ -100,6 +108,8 @@
         \item Doesn't not contain a 9
         \item Is in between 1000000 and 2000000
     \end{enumerate}
+
+    \vspace{1em}
 
     \item Write a 5 digit number which
     \begin{enumerate}[topsep=0pt, label=\alph*.]
@@ -110,11 +120,51 @@
         \item Has a 5 in its ten thousands place
     \end{enumerate}
 
+    \vspace{1em}
+
     \item Is a 5 digit number possible which
     \begin{enumerate}[topsep=0pt, label=\alph*.]
         \item Has an even number in its ten thousands place \hspace{\stretch{1}} \rule[-5pt]{1cm}{0.5pt}
         \item Is more than 90000
     \end{enumerate}
 \end{enumerate}
+
+\section{Some Inequalities}
+\fbox{\begin{minipage}{\linewidth}
+    Here is a useful tip for comparing 5 digit numbers: \\
+
+    Compare \hspace{\stretch{1}} \begin{tabular}[t]{>{\columncolor{cyan}} c c c c c}
+        2 & 7 & 8 & 6 & 9 \\
+        2 & 8 & 1 & 1 & 9 \\
+           \multicolumn{2}{l}{$\uparrow$}    &   &   &   \\
+           \multicolumn{4}{l}{same} \\
+    \end{tabular} \hspace{\stretch{1}} \begin{tabular}[t]{c >{\columncolor{cyan}} c c c c}
+        2 & 7 & 8 & 6 & 9 \\
+        2 & 8 & 1 & 1 & 9 \\
+           & \multicolumn{2}{l}{$\uparrow$} &   &   \\
+           & \multicolumn{3}{l}{8 > 7} \\
+    \end{tabular} \hspace{\stretch{1}} 27869 < 28133
+\end{minipage}}
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{0.3\linewidth} p{0.3\linewidth} p{0.3\linewidth}}
+    {40971 \quad \ineqbox \;\quad 66869 } &  & { 67952 \quad \ineqbox \;\quad 85130 } \\
+    {40305 \quad \ineqbox \;\quad 82696 } &  & { 35109 \quad \ineqbox \;\quad 72148 } \\
+    {11566 \quad \ineqbox \;\quad 12497 } &  & { 60403 \quad \ineqbox \;\quad 78180 } \\
+    {92445 \quad \ineqbox \;\quad 13895 } &  & { 16190 \quad \ineqbox \;\quad 76617 } \\
+    {36953 \quad \ineqbox \;\quad 29179 } &  & { 75473 \quad \ineqbox \;\quad 76386 } \\
+\end{tabular}
+
+\section{Ordering Numbers}
+
+\begin{tabular}{r l}
+    \multirow{2}{*}{From least to greatest} & 11513, 57741, 18980, 02242, 02242 \\
+    & \rule{7cm}{0.5pt} \\
+\end{tabular}
+
+\noindent \begin{tabular}{r l}
+    \multirow{2}{*}{From greatest to least} & 89992, 31733, 11351, 37570, 28872 \\
+    & \rule{7cm}{0.5pt} \\
+\end{tabular}
 
 \end{document}
