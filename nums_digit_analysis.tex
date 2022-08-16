@@ -8,6 +8,8 @@
 \usepackage{enumitem}
 \usepackage{lipsum}
 \usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{graphicx}
 
 \newcommand{\ineqbox}{\fbox{\begin{minipage}[c][3ex][b]{3ex}\;\end{minipage}}}
 
@@ -144,8 +146,9 @@
            & \multicolumn{2}{l}{$\uparrow$} &   &   \\
            & \multicolumn{3}{l}{8 > 7} \\
     \end{tabular} \hspace{\stretch{1}} 27869 < 28133
-\end{minipage}}
+\end{minipage}} \\ \\
 
+\noindent Fill the following boxes with the > or < sign: \\
 \renewcommand{\arraystretch}{2}
 \begin{tabular}{p{0.3\linewidth} p{0.3\linewidth} p{0.3\linewidth}}
     {40971 \quad \ineqbox \;\quad 66869 } &  & { 67952 \quad \ineqbox \;\quad 85130 } \\
@@ -166,5 +169,19 @@
     \multirow{2}{*}{From greatest to least} & 89992, 31733, 11351, 37570, 28872 \\
     & \rule{7cm}{0.5pt} \\
 \end{tabular}
+
+\section{Combinations}
+\setlength\intextsep{0pt}
+\begin{wrapfigure}{r}{0.5\textwidth}
+    \includegraphics[width=0.45\textwidth]{math_images/dog_numbers.png}
+\end{wrapfigure}
+
+Use the numbers that the dog is looking at to form 5 digit numbers that don't begin with a 0. Then, arrange all possible number combinations from least to greatest, then from greatest to least on the respective lines:
+
+\phantom{dog} \\
+
+\noindent \rule{\linewidth}{0.5pt} \\
+
+\noindent \rule{\linewidth}{0.5pt}
 
 \end{document}
